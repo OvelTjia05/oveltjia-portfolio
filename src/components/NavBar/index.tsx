@@ -20,28 +20,26 @@ const NavBar = () => {
           <NavigationMenuTrigger className="transition-transform duration-200 hover:scale-110 md:hidden">
             <Menu width={32} height={32} />
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="flex flex-col px-4 py-2">
+          <NavigationMenuContent className="flex w-44 flex-col gap-2 px-4 py-2">
             {menuList.map((item) => (
-              <NavigationMenuLink key={item} asChild>
-                <Link
-                  to="#skills"
-                  className="text-lg font-medium hover:text-blue-500"
-                >
-                  {item}
-                </Link>
+              <NavigationMenuLink
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="text-lg font-medium transition-transform duration-200 hover:scale-105 hover:text-blue-500"
+              >
+                {item}
               </NavigationMenuLink>
             ))}
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem className="flex gap-6 max-md:hidden">
           {menuList.map((item) => (
-            <NavigationMenuLink key={item} asChild>
-              <Link
-                to="#skills"
-                className="text-lg font-medium hover:text-blue-500"
-              >
-                {item}
-              </Link>
+            <NavigationMenuLink
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className="text-lg font-medium transition-transform duration-200 hover:scale-105 hover:text-blue-500"
+            >
+              {item}
             </NavigationMenuLink>
           ))}
         </NavigationMenuItem>

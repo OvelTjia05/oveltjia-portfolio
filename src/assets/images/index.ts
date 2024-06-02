@@ -1,3 +1,3 @@
-import ProfileImg from "./IMG_20230508_152319.jpg";
+import ProfileImg from "./profile.jpg";
 
 export { ProfileImg };

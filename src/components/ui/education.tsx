@@ -43,7 +43,7 @@ const Education = () => {
   };
 
   return (
-    <Table className="h-screen overflow-hidden">
+    <Table className="overflow-hidden">
       <TableHeader>
         <TableRow>
           <TableHead>Name</TableHead>

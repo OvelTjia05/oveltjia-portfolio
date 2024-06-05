@@ -8,7 +8,7 @@ const Banner = () => {
 
   return (
     <div
-      className="banner min-h-[65vh] pb-12 pt-44 max-lg:px-[15%] max-sm:px-6 max-sm:pb-6 max-sm:pt-36 max-xs:pt-24 lg:px-[20%]"
+      className="banner min-h-[65vh] pb-12 pt-44 max-lg:px-[15%] max-sm:px-6 max-sm:pb-6 max-sm:pt-36 max-xs:pt-28 lg:px-[20%]"
       id="home"
     >
       <div className="lg:h-[460px]">

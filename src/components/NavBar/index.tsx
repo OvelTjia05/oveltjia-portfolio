@@ -1,4 +1,4 @@
-import { ModeToggle } from "../mode-toggle";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,7 +12,7 @@ import { Menu } from "lucide-react";
 const NavBar = () => {
   const menuList = ["Home", "Skills", "About", "Contact"];
   return (
-    <NavigationMenu className="top-0 justify-between bg-secondary py-4 shadow max-lg:px-[15%] max-sm:px-6 lg:px-[20%]">
+    <NavigationMenu className="fixed top-0 w-full justify-between bg-secondary py-4 shadow max-lg:px-[15%] max-sm:px-6 lg:px-[20%]">
       <ModeToggle />
       <NavigationMenuList>
         <NavigationMenuItem>

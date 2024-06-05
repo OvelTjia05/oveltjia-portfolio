@@ -1,5 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Timeline from "../ui/timeline";
+import Education from "../ui/education";
+import Certificates from "../ui/certificates";
 
 const About = () => {
   return (
@@ -12,7 +14,7 @@ const About = () => {
         className="flex w-full flex-col rounded-3xl bg-muted-foreground/30 p-4 backdrop-blur"
       >
         <h1 className="mb-4 text-center text-5xl font-medium">About</h1>
-        <TabsList className="">
+        <TabsList className="my-2">
           <TabsTrigger value="timeline" className="hover:scale-105">
             Timeline
           </TabsTrigger>
@@ -26,9 +28,11 @@ const About = () => {
         <TabsContent value="timeline">
           <Timeline />
         </TabsContent>
-        <TabsContent value="education">Change your password here.</TabsContent>
+        <TabsContent value="education">
+          <Education />
+        </TabsContent>
         <TabsContent value="certificate">
-          Change your password here.
+          <Certificates />
         </TabsContent>
       </Tabs>
     </div>

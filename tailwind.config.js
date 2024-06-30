@@ -49,11 +49,19 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        purple: {
+          DEFAULT: "hsl(249, 54%, 55%)",
+          50: "hsl(249, 100%, 76%)",
+          100: "	hsl(249, 63%, 66%)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      transitionDuration: {
+        250: "250ms",
       },
       keyframes: {
         "accordion-down": {
@@ -69,24 +77,28 @@ module.exports = {
           to: { height: "100%" },
         },
         "slide-up": {
-          "0%": { transform: "translateY(10%)", opacity: 0 },
-          "100%": { transform: "translateY(0)", opacity: 1 },
+          from: { transform: "translateY(10%)", opacity: 0 },
+          to: { transform: "translateY(0)", opacity: 1 },
         },
-        "show-up": {
-          from: { opacity: 0 },
-          to: { opacity: 1 },
+        "scale-up": {
+          from: { height: 0, width: 0 },
+          to: { height: "100%", width: "100%" },
+        },
+        "scale-down": {
+          from: { height: "100%", width: "100%" },
+          to: { height: 0, width: 0 },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         moveline: "moveline var(--animation-duration) linear forwards",
-        "show-up": "show-up 1s linear forwards",
+        "scale-up": "scale-up 5.3s ease-in-out forwards",
+        "scale-down": "scale-down 5.3s ease-in-out forwards",
         "slide-up": "slide-up 1s ease-in-out forwards",
       },
     },
     screens: {
-      "2xl": "1400px",
       xs: "475px",
       "2xs": "400px",
       ...defaultTheme.screens,

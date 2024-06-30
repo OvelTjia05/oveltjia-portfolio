@@ -66,7 +66,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 72px;
+  scroll-padding-top: 68px;
 }
 
 /* banner */
@@ -74,6 +74,50 @@ html {
   position: relative;
   background: linear-gradient(hsla(0, 0%, 40%, 0.5), hsl(var(--background)));
 }
+
+.social-icon a {
+  width: 48px;
+  height: 48px;
+  /* background: ; */
+  display: inline-flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 2px solid;
+  @apply border-purple;
+}
+.social-icon a::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  /* background-color: hsl(var(--foreground)); */
+  @apply bg-purple;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+.social-icon a svg {
+  height: 70%;
+  width: 70%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover svg {
+  /* filter: brightness(100%) saturate(102%) invert(100%) sepia(0%)
+    saturate(102.04%) hue-rotate(-346deg) brightness(105%) contrast(114%); */
+  fill: white;
+}
+
+/* .dark .social-icon a:hover svg {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg) brightness(95%) contrast(86%);
+} */
 
 /* skill */
 .skill {
@@ -87,13 +131,74 @@ html {
 }
 
 /* about */
+.tab-button::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+  width: 0%;
+  height: 0%;
+  z-index: 9;
+  transition: 0.3s ease-in-out;
+}
+
+.tab-button[data-state="active"]::after {
+  width: 100%;
+  height: 100%;
+}
+
 .timeline::after {
   content: "";
   position: absolute;
   border-radius: 20px;
   width: 6px;
-  background: hsl(var(--foreground));
   top: 0px;
+  margin-left: 17px;
+  @apply bg-purple-100;
+}
+.triangle-container {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  .triangle-left::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 17px solid hsl(var(--background));
+    border-bottom: 17px solid transparent;
+    border-top: 17px solid transparent;
+    position: absolute;
+    top: -17px;
+    right: 3.5px;
+  }
+
+  .triangle-right::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 17px solid hsl(var(--background));
+    border-bottom: 17px solid transparent;
+    border-top: 17px solid transparent;
+    position: absolute;
+    top: -17px;
+    left: 3.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .triangle::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 15px solid hsl(var(--background));
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 5.5px;
+  }
 }
 
 /* .circle::after {

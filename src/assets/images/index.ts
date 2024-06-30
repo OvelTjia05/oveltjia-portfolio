@@ -1,4 +1,5 @@
 import ProfileImg from "./profile.jpg";
+import SiladenImg from "./siladen.png";
 import GCCF1Img from "./gccf1.png";
 import GCCF2Img from "./gccf2.png";
 import GCCF3Img from "./gccf3.png";
@@ -11,6 +12,7 @@ import Hackerank1Img from "./hackerRank.png";
 
 export {
   ProfileImg,
+  SiladenImg,
   GCCF1Img,
   GCCF2Img,
   GCCF3Img,

@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 
-const useTypewriter = (texts: string[], speed: number = 200): string => {
+const useTypewriter = (
+  texts: string[],
+  typingSpeed: number = 200,
+  deletingSpeed: number = 100,
+) => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const [index, setIndex] = useState(0);
@@ -27,9 +31,20 @@ const useTypewriter = (texts: string[], speed: number = 200): string => {
       }
     };
 
-    const timeoutId = setTimeout(handleTypewriter, speed);
+    const timeoutId = setTimeout(
+      handleTypewriter,
+      isDeleting ? deletingSpeed : typingSpeed,
+    );
     return () => clearTimeout(timeoutId);
-  }, [index, texts, displayedText, currentTextIndex, speed, isDeleting]);
+  }, [
+    index,
+    texts,
+    displayedText,
+    currentTextIndex,
+    deletingSpeed,
+    typingSpeed,
+    isDeleting,
+  ]);
 
   return displayedText;
 };

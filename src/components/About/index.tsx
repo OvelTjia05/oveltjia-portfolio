@@ -21,7 +21,7 @@ const About = () => {
             <div key={item} className="relative">
               <TabsTrigger
                 value={item}
-                className={`tab-button after:from-purple after:bg-gradient-to-r after:to-blue-400 data-[state=active]:bg-transparent data-[state=active]:text-white`}
+                className={`tab-button after:bg-gradient-to-r after:from-purple after:to-blue-400 data-[state=active]:bg-transparent data-[state=active]:text-white`}
               >
                 <span className="z-10">
                   {item.charAt(0).toUpperCase() + item.slice(1)}

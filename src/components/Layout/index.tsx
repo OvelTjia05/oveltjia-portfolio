@@ -1,9 +1,11 @@
 import About from "../About";
 import Banner from "../Banner";
 import Contact from "../Contact";
+import Footer from "../Footer";
 import NavBar from "../NavBar";
 import Projects from "../Projects";
 import Skills from "../Skills";
+import { Toaster } from "../ui/toaster";
 
 const Layout = () => {
   return (
@@ -14,7 +16,8 @@ const Layout = () => {
       <About />
       <Projects />
       <Contact />
-      <div className="mx-44 max-lg:mx-32 max-sm:mx-6"></div>
+      <Footer />
+      <Toaster />
     </div>
   );
 };

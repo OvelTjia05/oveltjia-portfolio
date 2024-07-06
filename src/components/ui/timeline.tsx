@@ -15,13 +15,13 @@ const Timeline = () => {
   const duration = eventList.length;
   return (
     <div
-      className={`timeline relative mt-2 after:animate-moveline md:after:left-1/2 md:after:ml-[-3px]`}
+      className={`timeline after:animate-moveline-down relative mt-2 md:after:left-1/2 md:after:ml-[-3px]`}
       style={{ "--animation-duration": `${duration}s` } as any}
     >
       {eventList.map((item, index) => (
         <div className="relative" key={index}>
           <span
-            className={`circle pointer-events-none absolute left-1/2 top-10 z-10 flex max-h-8 w-8 animate-moveline items-center justify-center rounded-full bg-purple-100 max-md:left-1 md:-ml-4`}
+            className={`circle animate-moveline-down pointer-events-none absolute left-1/2 top-10 z-10 flex max-h-8 w-8 items-center justify-center rounded-full bg-purple-100 max-md:left-1 md:-ml-4`}
             style={{
               animationDelay: `${index + 0.1}s`,
               animationDuration: "700ms",

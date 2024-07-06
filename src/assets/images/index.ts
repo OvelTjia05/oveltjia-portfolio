@@ -9,6 +9,10 @@ import GCCF6Img from "./gccf6.png";
 import GCCF7Img from "./gccf7.png";
 import GCCF8Img from "./gccf8.png";
 import Hackerank1Img from "./hackerRank.png";
+import HackerRank2Img from "./hackerRank2.jpg";
+import SummaImg from "./summa.jpg";
+import UNBKImg from "./unbk.jpg";
+import TotalGrdImg from "./total-grade.jpg";
 
 export {
   ProfileImg,
@@ -22,4 +26,8 @@ export {
   GCCF7Img,
   GCCF8Img,
   Hackerank1Img,
+  HackerRank2Img,
+  SummaImg,
+  TotalGrdImg,
+  UNBKImg,
 };

@@ -72,9 +72,12 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        moveline: {
+        "moveline-down": {
           from: { height: "0%" },
           to: { height: "100%" },
+        },
+        "moveline-left": {
+          to: { width: "0%" },
         },
         "slide-up": {
           from: { transform: "translateY(10%)", opacity: 0 },
@@ -92,8 +95,12 @@ module.exports = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        moveline: "moveline var(--animation-duration) linear forwards",
+        "moveline-down":
+          "moveline-down var(--animation-duration) linear forwards",
+        "moveline-left": "moveline-left 4.4s linear forwards",
+
         "scale-up": "scale-up 5.3s ease-in-out forwards",
+
         "scale-down": "scale-down 5.3s ease-in-out forwards",
         "slide-up": "slide-up 1s ease-in-out forwards",
       },

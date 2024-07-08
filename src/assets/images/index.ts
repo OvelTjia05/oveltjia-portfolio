@@ -1,5 +1,6 @@
 import ProfileImg from "./profile.jpg";
 import SiladenImg from "./siladen.png";
+import FilkomAppImg from "./filkom-app.png";
 import GCCF1Img from "./gccf1.png";
 import GCCF2Img from "./gccf2.png";
 import GCCF3Img from "./gccf3.png";
@@ -17,6 +18,7 @@ import TotalGrdImg from "./total-grade.jpg";
 export {
   ProfileImg,
   SiladenImg,
+  FilkomAppImg,
   GCCF1Img,
   GCCF2Img,
   GCCF3Img,

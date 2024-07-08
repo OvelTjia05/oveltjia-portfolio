@@ -1,4 +1,4 @@
-import { SiladenImg } from "@/assets/images";
+import { FilkomAppImg, SiladenImg } from "@/assets/images";
 import {
   Tooltip,
   TooltipContent,
@@ -44,7 +44,7 @@ const Projects = () => {
     {
       name: "Filkom Super App",
       type: "web",
-      image: SiladenImg,
+      image: FilkomAppImg,
       desc: "A web application to manage all activities in the Faculty of Computer Science (Filkom), which consists of several apps, namely Academic Guidance, Alumni, Thesis, and still increasing. During my internship, I worked in the Academic Guidance Development section as a front-end, assisting in API integration, data manipulation, page slicing, code refactoring, and bug fixing.",
       sc: "https://github.com/filkomunklab/filkom-apps-fe.git",
       url: "http://App.filkom.unklab.ac.id",
@@ -88,15 +88,15 @@ const Projects = () => {
                       <div className="relative mx-auto h-[172px] max-w-[301px] rounded-t-xl border-[8px] border-gray-800 bg-gray-800 dark:border-gray-800 max-xs:h-[103px] max-xs:max-w-[180px] xs:h-[126px] xs:max-w-[220px] sm:h-[172px] sm:max-w-[301px] md:h-[103px] md:max-w-[180px] lg:h-[126px] lg:max-w-[220px] 2xl:h-[172px] 2xl:max-w-[301px]">
                         <div className="h-full overflow-hidden rounded-lg bg-white dark:bg-gray-800">
                           <img
-                            src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen.png"
-                            className="h-full w-full rounded-lg dark:hidden"
-                            alt=""
+                            src={item.image}
+                            className="h-full w-full rounded-lg"
+                            alt={item.name}
                           />
-                          <img
+                          {/* <img
                             src="https://flowbite.s3.amazonaws.com/docs/device-mockups/laptop-screen-dark.png"
                             className="hidden h-full w-full rounded-lg dark:block"
                             alt=""
-                          />
+                          /> */}
                         </div>
                       </div>
                       <div className="relative mx-auto h-[16px] w-[320px] rounded-b-xl rounded-t-sm bg-gray-900 dark:bg-gray-700 max-xs:h-[10px] max-xs:w-[191px] xs:h-[13px] xs:w-[234px] sm:h-[16px] sm:w-[320px] md:h-[10px] md:w-[191px] lg:h-[13px] lg:w-[234px] 2xl:h-[16px] 2xl:min-w-[320px]">

@@ -32,7 +32,7 @@ const Skills = () => {
     { icon: <MySQLIcon />, name: "MySQL" },
   ];
   return (
-    <div
+    <section
       id="skills"
       className="flex flex-col items-center bg-accent/85 px-[20%] py-8 max-lg:px-[15%] max-sm:px-6"
     >
@@ -48,7 +48,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

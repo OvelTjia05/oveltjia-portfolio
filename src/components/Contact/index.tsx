@@ -79,7 +79,7 @@ const Contact = () => {
   };
 
   return (
-    <div
+    <section
       id="contact"
       className="flex flex-col items-center px-[20%] py-8 max-lg:px-[15%] max-sm:px-6"
     >
@@ -193,7 +193,7 @@ const Contact = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </section>
   );
 };
 

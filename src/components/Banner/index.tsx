@@ -21,7 +21,7 @@ const Banner = () => {
   const typingText = useTypewriter(textList);
 
   return (
-    <div
+    <section
       className="banner min-h-[65vh] py-28 max-2xl:pb-12 max-2xl:pt-44 max-lg:px-[15%] max-sm:px-6 max-sm:pb-6 max-xs:pt-28 lg:px-[20%]"
       id="home"
     >
@@ -66,7 +66,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -7,7 +7,7 @@ const About = () => {
   const tabList = ["timeline", "education", "certificate"];
 
   return (
-    <div
+    <section
       id="about"
       className="flex flex-col items-center px-[20%] py-8 max-lg:px-[15%] max-sm:px-6"
     >
@@ -40,7 +40,7 @@ const About = () => {
           <Certificates />
         </TabsContent>
       </Tabs>
-    </div>
+    </section>
   );
 };
 

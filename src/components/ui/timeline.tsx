@@ -15,13 +15,13 @@ const Timeline = () => {
   const duration = eventList.length;
   return (
     <div
-      className={`timeline after:animate-moveline-down relative mt-2 md:after:left-1/2 md:after:ml-[-3px]`}
+      className={`timeline relative mt-2 after:animate-moveline-down md:after:left-1/2 md:after:ml-[-3px]`}
       style={{ "--animation-duration": `${duration}s` } as any}
     >
       {eventList.map((item, index) => (
         <div className="relative" key={index}>
           <span
-            className={`circle animate-moveline-down pointer-events-none absolute left-1/2 top-10 z-10 flex max-h-8 w-8 items-center justify-center rounded-full bg-purple-100 max-md:left-1 md:-ml-4`}
+            className={`circle pointer-events-none absolute left-1/2 top-10 z-10 flex max-h-8 w-8 animate-moveline-down items-center justify-center rounded-full bg-purple-100 max-md:left-1 md:-ml-4`}
             style={{
               animationDelay: `${index + 0.1}s`,
               animationDuration: "700ms",
@@ -38,7 +38,7 @@ const Timeline = () => {
               <small>{item.time}</small>
               <p className="mt-1 text-sm">{item.desc}</p>
               <span
-                className={`triangle absolute top-5 z-[99] border-y-[20px] border-x-purple border-y-transparent max-md:-left-[20px] max-md:border-r-[20px] ${index % 2 === 0 ? "triangle-left md:-right-[20px] md:border-l-[20px]" : "triangle-right md:-left-[20px] md:border-r-[20px]"}`}
+                className={`triangle absolute top-5 z-[99] border-y-[20px] border-x-purple border-y-transparent max-md:-left-[19.8px] max-md:border-r-[20px] ${index % 2 === 0 ? "triangle-left md:-right-[20px] md:border-l-[20px]" : "triangle-right md:-left-[20px] md:border-r-[20px]"}`}
               ></span>
             </div>
           </div>

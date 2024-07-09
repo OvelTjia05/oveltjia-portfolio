@@ -1,6 +1,9 @@
 import ProfileImg from "./profile.jpg";
 import SiladenImg from "./siladen.png";
 import FilkomAppImg from "./filkom-app.png";
+import MeannoImg from "./meanno.png";
+import ShoesWebImg from "./shoes-classifier.png";
+import MyWarehouseImg from "./my-warehouse.png";
 import GCCF1Img from "./gccf1.png";
 import GCCF2Img from "./gccf2.png";
 import GCCF3Img from "./gccf3.png";
@@ -19,6 +22,9 @@ export {
   ProfileImg,
   SiladenImg,
   FilkomAppImg,
+  MeannoImg,
+  ShoesWebImg,
+  MyWarehouseImg,
   GCCF1Img,
   GCCF2Img,
   GCCF3Img,

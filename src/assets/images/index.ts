@@ -12,8 +12,10 @@ import GCCF5Img from "./gccf5.png";
 import GCCF6Img from "./gccf6.png";
 import GCCF7Img from "./gccf7.png";
 import GCCF8Img from "./gccf8.png";
-import Hackerank1Img from "./hackerRank.png";
-import HackerRank2Img from "./hackerRank2.jpg";
+import HackerankJavascriptBasicImg from "./hackerrank-javascript-basic.png";
+import HackerRankJavascriptIntermediate from "./hackerrank-javascript-intermediate.jpg";
+import HackerRankReactBasicImg from "./hackerrank-react-basic.jpg";
+import HackerRankFrontEndReactImg from "./hackerrank-frontend-react.jpg";
 import SummaImg from "./summa.jpg";
 import UNBKImg from "./unbk.jpg";
 import TotalGrdImg from "./total-grade.jpg";
@@ -33,8 +35,10 @@ export {
   GCCF6Img,
   GCCF7Img,
   GCCF8Img,
-  Hackerank1Img,
-  HackerRank2Img,
+  HackerankJavascriptBasicImg,
+  HackerRankJavascriptIntermediate,
+  HackerRankReactBasicImg,
+  HackerRankFrontEndReactImg,
   SummaImg,
   TotalGrdImg,
   UNBKImg,

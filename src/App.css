@@ -207,9 +207,14 @@ html {
 
 /* Projects */
 .custom-scrollbar::-webkit-scrollbar {
+  display: none;
   width: 6px;
   border-radius: 20px;
   background-color: hsl(var(--muted-foreground) / 0.5);
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar {
+  display: unset;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {

@@ -37,14 +37,11 @@ const Skills = () => {
       className="flex flex-col items-center bg-accent/85 px-[20%] py-8 max-lg:px-[15%] max-sm:px-6"
     >
       <h1 className="mb-8 text-5xl font-medium">Skills</h1>
-      <div className="skill w-full gap-8 max-sm:gap-6 [&_p]:text-xs [&_svg]:h-16 [&_svg]:w-16 [&_svg]:rounded-lg [&_svg]:bg-primary/10 [&_svg]:p-2 [&_svg]:shadow [&_svg]:backdrop-blur-lg">
+      <div className="skill w-full gap-8 max-sm:gap-6">
         {skillList.map((item) => (
-          <div
-            key={item.name}
-            className="flex flex-col items-center gap-1 [&_svg]:hover:bg-primary/20"
-          >
+          <div key={item.name} className="flex flex-col items-center gap-1">
             {item.icon}
-            <p className="text-center">{item.name}</p>
+            <p className="text-center text-xs">{item.name}</p>
           </div>
         ))}
       </div>

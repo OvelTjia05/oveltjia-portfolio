@@ -125,9 +125,14 @@ html {
   grid-template-columns: repeat(auto-fit, 65px);
   margin: 0 auto;
   justify-content: center;
-  align-content: flex-start;
-  list-style: none;
-  overflow: auto;
+}
+
+.skill svg {
+  @apply h-16 w-16 rounded-lg bg-primary/10 p-2 shadow;
+}
+
+.skill svg:hover {
+  @apply bg-primary/20;
 }
 
 /* about */

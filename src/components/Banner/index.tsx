@@ -26,7 +26,7 @@ const Banner = () => {
       id="home"
     >
       <div className="min-h-[500px] 2xl:flex 2xl:flex-row-reverse 2xl:items-center 2xl:justify-between">
-        <Avatar className="h-[400px] w-[400px] shadow max-2xl:float-right max-2xl:h-[350px] max-2xl:w-[350px] max-xl:h-[300px] max-xl:w-[300px] max-md:h-[250px] max-md:w-[250px] max-xs:h-full max-xs:w-full xs:ml-4">
+        <Avatar className="h-[400px] w-[400px] shadow max-2xl:float-right max-2xl:h-[350px] max-2xl:w-[350px] max-xl:h-[300px] max-xl:w-[300px] max-md:h-[250px] max-md:w-[250px] max-xs:mb-8 max-xs:h-full max-xs:w-full xs:ml-4">
           <AvatarImage src={ProfileImg} className="object-cover" />
           <AvatarFallback>OT</AvatarFallback>
         </Avatar>

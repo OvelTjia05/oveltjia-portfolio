@@ -20,6 +20,19 @@ import { Link } from "react-router-dom";
 import { useToast } from "../ui/use-toast";
 import { useState } from "react";
 
+const SOCIAL_MEDIA_LIST = [
+  {
+    icon: FacebookIcon,
+    url: "https://web.facebook.com/ovel.richy",
+    name: "Ovel Tjia",
+  },
+  {
+    icon: InstagramIcon,
+    url: "https://www.instagram.com/ovel_tjia",
+    name: "ovel_tjia",
+  },
+];
+
 const Contact = () => {
   const { toast } = useToast();
   const [isLoading, setIsLoading] = useState(false);
@@ -99,28 +112,20 @@ const Contact = () => {
             <h6 className="mb-4 text-sm text-muted-foreground">
               Know more about me and what I'm up to on my social media
             </h6>
-            <Link
-              to="https://web.facebook.com/ovel.richy"
-              target="_blank"
-              rel="noreferrer"
-              className="mb-2 flex items-center gap-2"
-            >
-              <FacebookIcon className="h-6 w-6" />
-              <p className="transition-colors hover:text-purple dark:hover:text-purple-50">
-                Ovel Tjia
-              </p>
-            </Link>
-            <Link
-              to="https://www.instagram.com/ovel_tjia"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2"
-            >
-              <InstagramIcon className="h-6 w-6" />
-              <p className="transition-colors hover:text-purple dark:hover:text-purple-50">
-                ovel_tjia
-              </p>
-            </Link>
+            {SOCIAL_MEDIA_LIST.map((sosmed, index) => (
+              <Link
+                to={sosmed.url}
+                target="_blank"
+                rel="noreferrer"
+                key={index}
+                className="mb-2 flex w-fit items-center gap-2"
+              >
+                <sosmed.icon className="h-6 w-6" />
+                <p className="bg transition-colors hover:text-purple dark:hover:text-purple-50">
+                  {sosmed.name}
+                </p>
+              </Link>
+            ))}
           </div>
         </div>
         <Card className="mx-auto w-full border-2 border-purple shadow-md shadow-purple-50 xs:max-w-xs">
